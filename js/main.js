@@ -27,21 +27,15 @@ function description_wrap_show() {
 }
 setTimeout(description_wrap_show, 1700)
 
-function description_wrap_show_fix() {
-	document.getElementById('description_wrap').style.height = '240px';
-}
-setTimeout(description_wrap_show_fix, 2700)
-
 function orange_show() {
-	document.getElementById('orange').style.color = '#ff6600';
-	document.getElementById('orange').style.animation = 'swipe .5s linear';
+	document.getElementById('orange').style.animation = 'swipe 1s linear';
 }
-setTimeout(orange_show, 2700)
+setTimeout(orange_show, 2900)
 
 function orange_show_fix() {
-	document.getElementById('orange').style.width = '100%';
+	document.getElementById('orange').style.color = '#ff6600';
 }
-setTimeout(orange_show_fix, 3200)
+setTimeout(orange_show_fix, 3900)
 
 function load_wrap_show() {
 	document.getElementById('load_wrap').style.display = 'block';
@@ -57,10 +51,10 @@ setTimeout(load_wrap_show_fix, 2900)
 function percent_count() {
 	var el_p = document.getElementById('percent');
 	var count = Number(el_p.innerHTML);
-	var id_p = setInterval(frame, 150);
+	var id_p = setInterval(frame, 50);
 
 	function frame(){
-		if (count == 99) {
+		if (count == 39) {
 			clearInterval(id_p);
 		}
 		else {
@@ -71,6 +65,23 @@ function percent_count() {
 }
 setTimeout(percent_count, 3000)
 
+
+function percent_count1() {
+	var el_p1 = document.getElementById('percent');
+	var count1 = Number(el_p1.innerHTML);
+	var id_p1 = setInterval(frame1, 150);
+
+	function frame1(){
+		if (count1 == 97) {
+			clearInterval(id_p1);
+		}
+		else {
+			count1++;
+			el_p1.innerHTML = count1 + 1;
+		}
+	}
+}
+setTimeout(percent_count1, 4600)
 
 
 function tractor_show() {
@@ -91,16 +102,17 @@ function tractor_wheels() {
 
 
 
+
 if (window.innerWidth <= 650) {
 
 	function description_wrap_show_fix() {
-		document.getElementById('description_wrap').style.height = '200px';
+		document.getElementById('description_wrap').style.height = '160px';
 	}
-	setTimeout(description_wrap_show_fix, 2700)
+	setTimeout(description_wrap_show_fix, 2600)
 
 	function tractor_move1() {
 		var el = document.getElementById('tractor');
-		var pos = '-320';
+		var pos = '-200';
 		var id = setInterval(frame, 100);
 
 		function frame(){
@@ -115,7 +127,15 @@ if (window.innerWidth <= 650) {
 	}
 	setTimeout(tractor_move1, 3500)
 }
-else{
+if (window.innerWidth > 650){
+
+
+	function description_wrap_show_fix() {
+		document.getElementById('description_wrap').style.height = '240px';
+	}
+	setTimeout(description_wrap_show_fix, 2600)
+
+
 	function tractor_move1() {
 		var el = document.getElementById('tractor');
 		var pos = '-490';
@@ -134,12 +154,21 @@ else{
 	setTimeout(tractor_move1, 3500)
 
 }
+if (window.screen.width <= 825 && window.screen.height <= 420) {
+
+
+	function description_wrap_show_fix() {
+		document.getElementById('description_wrap').style.height = '120px';
+	}
+	setTimeout(description_wrap_show_fix, 2600)
+}
+
+else{}
 
 
 
 
-
-window.onload = function(){
+/*window.onload = function(){
 
 	function percent_chng9() {
 		document.getElementById('percent').innerHTML = '100';
@@ -225,3 +254,4 @@ window.onload = function(){
 	setTimeout(preload_hide_fix, 12800)
 
 };
+*/
