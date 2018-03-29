@@ -220,72 +220,30 @@ body {
 }
 @-webkit-keyframes swipe {
 	0%{
-		color:#999999;
+		opacity: 1;
 	}
-	35%{
-		color:#999999;
+	40%{
+		opacity: 0;
 	}
-	35.1% {
-		color:#ff6600;
+	60%{
+		opacity: 0;
 	}
-	40% {
-		color:#ff6600;
-	}
-	40.1%{
-		color:#999999;
-	}
-	49.9%{
-		color:#999999;
-	}
-	50% {
-		color:#ff6600;
-	}
-	60% {
-		color:#ff6600;
-	}
-	60.1%{
-		color:#999999;
-	}
-	95%{
-		color:#999999;
-	}
-	95.1% {
-		color:#ff6600;
+	100%{
+		opacity: 1;
 	}
 }
 @keyframes swipe {
 	0%{
-		color:#999999;
+		opacity: 1;
 	}
-	35%{
-		color:#999999;
+	40%{
+		opacity: 0;
 	}
-	35.1% {
-		color:#ff6600;
+	60%{
+		opacity: 0;
 	}
-	40% {
-		color:#ff6600;
-	}
-	40.1%{
-		color:#999999;
-	}
-	49.9%{
-		color:#999999;
-	}
-	50% {
-		color:#ff6600;
-	}
-	60% {
-		color:#ff6600;
-	}
-	60.1%{
-		color:#999999;
-	}
-	95%{
-		color:#999999;
-	}
-	95.1% {
-		color:#ff6600;
+	100%{
+		opacity: 1;
 	}
 }
 

@@ -35,7 +35,7 @@ setTimeout(orange_show, 2900)
 function orange_show_fix() {
 	document.getElementById('orange').style.color = '#ff6600';
 }
-setTimeout(orange_show_fix, 3900)
+setTimeout(orange_show_fix, 3300)
 
 function load_wrap_show() {
 	document.getElementById('load_wrap').style.display = 'block';
@@ -72,7 +72,7 @@ function percent_count1() {
 	var id_p1 = setInterval(frame1, 150);
 
 	function frame1(){
-		if (count1 == 97) {
+		if (count1 == 63) {
 			clearInterval(id_p1);
 		}
 		else {
@@ -82,6 +82,41 @@ function percent_count1() {
 	}
 }
 setTimeout(percent_count1, 4600)
+
+
+function percent_count2() {
+	var el_p2 = document.getElementById('percent');
+	var count2 = Number(el_p2.innerHTML);
+	var id_p2 = setInterval(frame2, 250);
+
+	function frame2(){
+		if (count2 == 81) {
+			clearInterval(id_p2);
+		}
+		else {
+			count2++;
+			el_p2.innerHTML = count2 + 1;
+		}
+	}
+}
+setTimeout(percent_count2, 9600)
+
+function percent_count3() {
+	var el_p3 = document.getElementById('percent');
+	var count3 = Number(el_p3.innerHTML);
+	var id_p3 = setInterval(frame3, 400);
+
+	function frame3(){
+		if (count3 == 98) {
+			clearInterval(id_p3);
+		}
+		else {
+			count3++;
+			el_p3.innerHTML = count3 + 1;
+		}
+	}
+}
+setTimeout(percent_count3, 16600)
 
 
 function tractor_show() {
@@ -113,7 +148,7 @@ if (window.innerWidth <= 650) {
 	function tractor_move1() {
 		var el = document.getElementById('tractor');
 		var pos = '-200';
-		var id = setInterval(frame, 100);
+		var id = setInterval(frame, 80);
 
 		function frame(){
 			if (pos == '0') {
@@ -139,7 +174,7 @@ if (window.innerWidth > 650){
 	function tractor_move1() {
 		var el = document.getElementById('tractor');
 		var pos = '-490';
-		var id = setInterval(frame, 30);
+		var id = setInterval(frame, 40);
 
 		function frame(){
 			if (pos == '0') {
@@ -168,26 +203,26 @@ else{}
 
 
 
-/*window.onload = function(){
+window.onload = function(){
 
 	function percent_chng9() {
 		document.getElementById('percent').innerHTML = '100';
 	}
-	setTimeout(percent_chng9, 12000)
+	setTimeout(percent_chng9, 25000)
 
 	
 
 	function img_wrap_hide() {
 		document.getElementById('img_wrap').style.animation = 'fadeOut 0.1s linear';
 	}
-	setTimeout(img_wrap_hide, 12100)
+	setTimeout(img_wrap_hide, 25100)
 	function line_hide() {
 		document.getElementById('line').style.display = 'none';
 		document.getElementById('progress').style.animation = 'fadeOut 0.1s linear';
 		document.getElementById('percent').style.animation = 'fadeOut 0.1s linear';
 		document.getElementById('perc_symbol').style.animation = 'fadeOut 0.1s linear';
 	}
-	setTimeout(line_hide, 12100)
+	setTimeout(line_hide, 25100)
 
 
 
@@ -197,61 +232,60 @@ else{}
 		document.getElementById('percent').style.display = 'none';
 		document.getElementById('perc_symbol').style.display = 'none';
 	}
-	setTimeout(img_wrap_hide_fix, 12200)
+	setTimeout(img_wrap_hide_fix, 25200)
 
 
 	function description_wrap_hide() {
 		document.getElementById('description_wrap').style.animation = 'slidesRev 0.2s linear';
 	}
-	setTimeout(description_wrap_hide, 12200)
+	setTimeout(description_wrap_hide, 25200)
 
 	function description_wrap_hide_fix() {
 		document.getElementById('description_wrap').style.visibility = 'hidden';
 		document.getElementById('description_wrap').style.height = '0px';
 	}
-	setTimeout(description_wrap_hide_fix, 12400)
+	setTimeout(description_wrap_hide_fix, 25400)
 
 	function slogan_hide() {
 		document.getElementById('slogan').style.animation = 'slideDownRev .1s linear';
 	}
-	setTimeout(slogan_hide, 12400)
+	setTimeout(slogan_hide, 25400)
 
 	function slogan_hide_fix() {
 		document.getElementById('slogan').style.visibility = 'hidden';
 		document.getElementById('slogan').style.top = '-40px';
 	}
-	setTimeout(slogan_hide_fix, 12500)
+	setTimeout(slogan_hide_fix, 25500)
 
 	function name_hide() {
 		document.getElementById('name').style.animation = 'scaleBlinkRev 0.1s linear';
 	}
-	setTimeout(name_hide, 12500)
+	setTimeout(name_hide, 25500)
 
 	function name_hide_fix() {
 		document.getElementById('name').style.visibility = 'hidden';
 		document.getElementById('name').style.transform = 'scale(0)';
 	}
-	setTimeout(name_hide_fix, 12600)
+	setTimeout(name_hide_fix, 25600)
 
 	function logo_hide() {
 		document.getElementById('logo').style.animation = 'scaleBlinkRev 0.1s linear';
 	}
-	setTimeout(logo_hide, 12500)
+	setTimeout(logo_hide, 25500)
 
 	function logo_hide_fix() {
 		document.getElementById('logo').style.visibility = 'hidden';
 		document.getElementById('logo').style.transform = 'scale(0)';
 	}
-	setTimeout(logo_hide_fix, 12600)
+	setTimeout(logo_hide_fix, 25600)
 
 	function preload_hide() {
 		document.getElementById('preloader_wrap').style.animation = 'fadeOut 0.2s linear';
 	}
-	setTimeout(preload_hide, 12600)
+	setTimeout(preload_hide, 25600)
 	function preload_hide_fix() {
 		document.getElementById('preloader_wrap').style.display = 'none';
 	}
-	setTimeout(preload_hide_fix, 12800)
+	setTimeout(preload_hide_fix, 25800)
 
 };
-*/
